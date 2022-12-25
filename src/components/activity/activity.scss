@@ -1,0 +1,55 @@
+$question-font-size: 1.5rem;
+$question-background-color: rgb(41, 95, 41);
+$idea-font-size: 35px;
+
+#idea-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.title__text--happy {
+  background: linear-gradient(to right, hsl(22, 96%, 48%) 0, hsl(33, 97%, 45%) 10%, hsl(127, 92%, 42%) 20%, hsl(194, 88%, 52%) 30%, hsl(245, 84%, 49%) 40%, hsl(298, 97%, 39%) 50%, hsl(22, 96%, 48%) 60%, hsl(33, 97%, 45%) 70%, hsl(127, 92%, 42%) 80%, hsl(194, 88%, 52%) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: darkmagenta;
+}
+
+#question {
+  height: auto;
+  width: auto;
+
+  font-size: $question-font-size;
+
+  outline: none;
+  border: 5px solid $question-background-color;
+  background-color: $question-background-color;
+  box-shadow: 5px 5px 10px black;
+  cursor: pointer;
+}
+
+#question:active {
+  transform: scale(0.9);
+}
+
+#question:focus {
+  border-color: rgb(11, 124, 200);
+}
+
+#idea {
+  font-size: $idea-font-size;
+  text-align: center;
+  color: darkorchid;/* rgb(237, 248, 84); */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: darkmagenta;
+}
+
+.fun {
+  /* CSS generated from https://uigradients.com */
+  /* background: hwb(330 31% 2%);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, hwb(330 31% 2%), hsl(42, 97%, 55%));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, hwb(330 31% 2%), hsl(42, 97%, 55%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

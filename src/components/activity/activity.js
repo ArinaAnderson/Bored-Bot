@@ -38,7 +38,7 @@ const renderTitle = (container, isBotHappy) => {
     titleContent.classList.remove('title__text--happy');
     titleContent.textContent = 'BoredBot';
   }
-  // container.innerHTML = '';
+
   container.appendChild(titleContent);
 };
 
